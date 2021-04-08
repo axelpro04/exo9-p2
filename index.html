@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="#">
+        <fieldset class="civility">
+            <legend class="civility">Votre Identité</legend>
+            <ol>
+                    <li><label for="sexe">Civilité :</label>
+                    <select name="sexe" id="sexe" required>
+                        <option value="Madame">Mme</option>
+                        <option value="Melle">Mlle</option>
+                        <option value="Monsieur">M.</option>
+                        </select>
+                        </li>
+                        <li><label for="lastname">Nom</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Dupont"/>
+                            </li>
+                            <li><label for="Firstname">Prénom</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="Jean" required/>
+                                </li>
+                                <label for="mail">Adresse mail</label>
+                                <input type="email" name="mail" id="mail" placeholder="Adresse mail"/>
+                                </li>
+                            </ol>
+                        </fieldset>
+                        
+            <fieldset class="delivery">
+       <legend class="delivery">Adresse de livraison</legend>
+        <ol>
+            <li><label for="adresse"> Adresse :</label>
+                <textarea name="adresse" placeholder="70 rue des Jacobins 80000 Amiens" rows="3" cols="20"></textarea>
+                </li>
+<li><label for="zipcode">Code postal :</label>
+    <input type="text" name="zipcode" id="zipcode" placeholder="Code postal"/>
+</li>
+<li><label for="city">Ville :</label>
+    <input type="text" name="city" id="city" placeholder="Ville"/>
+</ol>
+</fieldset>
+
+<fieldset class="payment">
+    <form>
+    <legend class="payment">Informations de règlement</legend>
+    <ol>
+<li><label>Type de carte bancaire :
+<div> 
+    <input type="radio" name="cardType" id="visa" value="VISA" > VISA
+   </div> 
+   <div> 
+    <input type="radio" name="cardType" id="visa" value="MASTERCARD" > MASTERCARD
+   </div></label>
+</li>
+    <li><label for="cardholder">Numéro de carte :</label>
+        <input type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte">
+    </li>
+<li><label for="cardholder">Code de sécurité :</label>
+        <input type="text" name="code" id="code" placeholder="Code de sécurité">
+    </li>
+<li><label for="cardholder">Nom du titulaire :</label>
+    <input type="text" name="cardholder" id="cardholder" placeholder="Nom du titulaire">
+</li>
+</ol>
+<input type="checkbox" name="save" id="save"/>
+<label for="save"> Enregister sa carte bancaire</label>
+</fieldset>
+
+<input type="submit" value="j' achète" />
+</form>
+    </body>
+</html>
